@@ -16,9 +16,8 @@
 
         CGSize size  = [self intrinsicContentSize];
         CGSize imageSize = self.imageView.image.size;
-        self.imageEdgeInsets = UIEdgeInsetsMake(self.imageEdgeInsets.top, self.imageEdgeInsets.left + size.width - imageSize.width/2, self.imageEdgeInsets.bottom,self.imageEdgeInsets.right- size.width + imageSize.width/2);
-        self.titleEdgeInsets = UIEdgeInsetsMake(self.titleEdgeInsets.top, self.titleEdgeInsets.left -imageSize.width/2, self.titleEdgeInsets.bottom, self.titleEdgeInsets.right + imageSize.width/2);
-        self.contentEdgeInsets = UIEdgeInsetsMake(self.contentEdgeInsets.top,self.contentEdgeInsets.left + imageSize.width/2, self.contentEdgeInsets.bottom, self.contentEdgeInsets.right - imageSize.width/2);
+        self.imageEdgeInsets = UIEdgeInsetsMake(self.imageEdgeInsets.top, self.imageEdgeInsets.left + size.width - imageSize.width, self.imageEdgeInsets.bottom,self.imageEdgeInsets.right- size.width + imageSize.width);
+        self.titleEdgeInsets = UIEdgeInsetsMake(self.titleEdgeInsets.top, self.titleEdgeInsets.left -imageSize.width, self.titleEdgeInsets.bottom, self.titleEdgeInsets.right + imageSize.width);
     }
 }
 
